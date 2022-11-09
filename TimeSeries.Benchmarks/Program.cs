@@ -14,6 +14,9 @@ Console.ReadKey();
 [MemoryDiagnoser]
 public class SumEfficiency
 {
+    /// This benchmark shows that the Linq Sum method for an array of TimeSeries
+    /// is more efficient than the concurrent dictionary approach
+
     [Params(100, 500, 1000)]
     public int SeriesLength { get; set; }
 

@@ -28,6 +28,7 @@ public static class TimeSeriesExtensions
             .ToDictionary(k => k.Key, 
                             v => v.Sum(o => o.Value)));
 
+    [Obsolete]
     public static TimeSeries Sum_CD(this IEnumerable<TimeSeries> timeSeries)
     {
         var dict = new ConcurrentDictionary<DateTime, double>();
